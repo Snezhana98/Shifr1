@@ -1,0 +1,19 @@
+﻿<Window x:Class="Shifr1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shifr1"
+        mc:Ignorable="d"
+        Title="Шифрование файла" Height="464" Width="471">
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Content="ok"></StatusBarItem>
+        </StatusBar>
+        <UniformGrid Columns="1">
+            <Button Content="Шифрование" Click="ShifrClick"></Button>
+            <Button Content="Дешифрование" Click="DeshifrClick"></Button>
+        </UniformGrid>
+
+    </DockPanel>
+</Window>
