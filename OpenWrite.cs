@@ -14,7 +14,7 @@ namespace Shifr1
         }
         public OpenWrite(string Ext)
         {
-           ext = Ext;
+            ext = Ext;
         }
 
         public byte[] open()
@@ -30,6 +30,7 @@ namespace Shifr1
                     obj.Close();
                     return fo;
                 }
+                
             }
             return null;
         }

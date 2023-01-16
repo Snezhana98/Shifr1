@@ -10,19 +10,23 @@ namespace Shifr1
 
         public static byte[] Shifrovka(byte[] fo)
         {
-            for (int i=0; i < fo.Length; i++)
-            {
-                fo[i] ^= perem;
-            }
-            return fo;
+            
+                for (int i = 0; i < fo.Length; i++)
+                {
+                    fo[i] ^= perem;
+                }
+                return fo;
+            
         }
         public static byte[] Deshifrovka(byte[] fo)
         {
-            for (int i = 0; i < fo.Length; i++)
-            {
-                fo[i] ^= perem;
-            }
-            return fo;
+           
+                for (int i = 0; i < fo.Length; i++)
+                {
+                    fo[i] ^= perem;
+                }
+                return fo;
+           
         }
     }
 }

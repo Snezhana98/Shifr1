@@ -27,20 +27,27 @@ namespace Shifr1
 
         private void ShifrClick(object sender, RoutedEventArgs e)
         {
-            OpenWrite file = new OpenWrite();
+            OpenWrite file = new OpenWrite("txt");
             byte[] k = file.open();
-            byte[] m = ShifrDeshifr.Shifrovka(k);
-            OpenWrite file2 = new OpenWrite();
-            file2.write(m);
+            if (k != null) 
+            { 
+                byte[] m = ShifrDeshifr.Shifrovka(k);
+
+                OpenWrite file2 = new OpenWrite("txtx");
+                file2.write(m);
+            }
         }
 
         private void DeshifrClick(object sender, RoutedEventArgs e)
         {
-            OpenWrite file = new OpenWrite();
+            OpenWrite file = new OpenWrite("txtx");
             byte[] k = file.open();
-            byte[] m = ShifrDeshifr.Deshifrovka(k);
-            OpenWrite file2 = new OpenWrite();
-            file2.write(m);
+            if (k != null)
+            {
+                byte[] m = ShifrDeshifr.Deshifrovka(k);
+                OpenWrite file2 = new OpenWrite("txt");
+                file2.write(m);
+            }
         }
     }
 }
